@@ -30,4 +30,17 @@ public class PatientService {
         return "Age is"+ age+ "and safe to give dose";
 
     }
+
+    public String getOldestPatientName(List<Patient> patientList) {
+
+        int maxAge =0;
+        Patient ansPatient = null;
+        for(Patient patient : patientList){
+            if(patient.getAge()>maxAge){ //if u change <maxAge testcase will fail
+                maxAge = patient.getAge();
+                ansPatient = patient;
+            }
+        }
+        return  ansPatient.getPatientName();
+    }
 }

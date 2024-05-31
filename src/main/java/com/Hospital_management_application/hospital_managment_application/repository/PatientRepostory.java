@@ -10,6 +10,11 @@ import java.util.Map;
 @Repository
 public class PatientRepostory {
     Map<Integer, Patient> map = new HashMap<>();
+
+    public Object getAllPatients() {
+//        return map.get();
+        return map;
+    }
 }
 
 

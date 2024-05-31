@@ -45,4 +45,14 @@ public class Patient {
         this.age = age;
         this.disease = disease;
     }
-}
+
+//    public int getPatienAge() {
+//
+//    }
+//public int getPatientAge() {
+//    return this.age;
+//}
+
+
+    }
+
